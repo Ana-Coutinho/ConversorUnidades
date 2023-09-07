@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Conversor de Unidades</title>
+    <link rel="shortcut icon" type="imagex/png" href="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_c_icon_130711.png">
+</head>
+<body>
+    <script type="text/javascript" src="javas.js"></script>
+    <div class="container">
+    <h1>Conversor de Unidades</h1>
+    
+    <h2>Conversor de Comprimento</h2>
+    <input type="number" id="comprimentoValor" placeholder="Valor">
+    <select id="deComprimento">
+        <option value="cm">Centímetros</option>
+        <option value="m">Metros</option>
+        <option value="km">Quilomêtros</option>
+    </select>
+    <select id="paraComprimento">
+        <option value="cm">Centímetros</option>
+        <option value="m">Metros</option>
+        <option value="km">Quilômetros</option>
+    </select>
+    <button onclick="converterComprimento()">Converter</button>
+    <p id="resultadoComprimento"></p>
+
+    <h2>Conversor de Massa</h2>
+    <input type="number" id="massaValor" placeholder="Valor">
+    <select id="deMassa">
+        <option value="mg">Miligrama</option>
+        <option value="g">Grama</option>
+        <option value="kg">Quilograma</option>
+    </select>
+    <select id="paraMassa">
+        <option value="mg">Miligrama</option>
+        <option value="g">Grama</option>
+        <option value="kg">Quilograma</option>
+    </select>
+    <button onclick="converterMassa()">Converter</button>
+    <p id="resultadoMassa"></p>
+
+        <h2>Histórico de Resultados</h2>
+        <ul id="historico"></ul>
+
+</div>
+</body>
+</html>
